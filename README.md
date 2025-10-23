@@ -2,8 +2,6 @@
 > Projeto de Programação Orientada a Objetos em **Java**
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![OOP](https://img.shields.io/badge/Paradigma-OOP-blue?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)
 
 ---
 
