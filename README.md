@@ -1,95 +1,64 @@
-# 🦁 Sistema de Gerenciamento de Animais do Zoológico  
-> Projeto de Programação Orientada a Objetos em **Java**
+# 🧩 Sistema de Gerenciamento de Animais do Zoológico (Java OOP)
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+Este projeto demonstra **encapsulamento**, **herança**, **polimorfismo**, **interfaces** e **sobrecarga** em Java,
+seguindo os requisitos do exercício.
 
----
+## ⚙️ Como compilar e executar (sem IDE)
 
-## 🎯 Objetivo
-
-Este projeto foi desenvolvido para demonstrar os principais **pilares da Programação Orientada a Objetos (POO)** em Java:  
-**Encapsulamento, Herança, Polimorfismo, Interface e Sobrecarga.**
-
-O tema escolhido foi um **Sistema de Gerenciamento de Animais de um Zoológico**, no qual diferentes espécies herdam e implementam comportamentos específicos.
-
----
-
-## 🧠 Conceitos Aplicados
-
-| Conceito | Descrição |
-|-----------|------------|
-| 🧱 **Encapsulamento** | Todos os atributos são privados e acessados por *getters/setters*. |
-| 🧬 **Herança** | `Mamifero`, `Ave` e `Reptil` herdam da classe abstrata `Animal`. |
-| 🎭 **Polimorfismo** | Cada animal sobrescreve os métodos `emitirSom()` e `mover()`. |
-| 🔌 **Interface** | A interface `Alimentavel` define os métodos `comer()` e `beber()`. |
-| ➕ **Sobrecarga** | A classe `Leao` possui o método `alimentar()` com 3 versões diferentes. |
-
----
-
-## 📂 Estrutura do Projeto
+Requisitos: JDK 11+ instalado e `javac` no PATH.
 
 ```bash
-zoologico-java/
+# 1) Vá até a pasta do projeto (se ainda não estiver nela)
+
+# 2) Compile todos os .java gerando os .class em ./out/zoo
+mkdir -p out/zoo
+javac -d out/zoo src/zoo/aves/*.java src/zoo/mamiferos/*.java src/zoo/repteis/*.java src/zoo/base/*.java src/zoo/base/interfaces/*.java
+
+# 3) Execute o programa principal
+java -cp out/zoo zoo.Zoologico
+```
+
+## 📂 Estrutura
+```
+root/
 ├─ README.md
-├─ src/
+├─ out/
 │  └─ zoo/
-│     ├─ interfaces/
-│     │  └─ Alimentavel.java
-│     ├─ Alimento.java
-│     ├─ Animal.java
-│     ├─ Mamifero.java
-│     ├─ Ave.java
-│     ├─ Reptil.java
-│     ├─ Leao.java
-│     ├─ Aguia.java
-│     ├─ Cobra.java
-│     └─ Zoologico.java
-└─ out/
+│     ├─ aves/
+│     ├─ base/
+│     │  └─ interfaces/
+│     ├─ mamiferos/
+│     └─ repteis/
+└─ src/
+   └─ zoo/
+      ├─ aves/
+      │  ├─ Aguia.java
+      │  └─ Ave.java
+      ├─ base/
+      │  ├─ Alimento.java
+      │  ├─ Animal.java
+      │  ├─ Zoologico.java
+      │  └─ interfaces/
+      │     └─ Alimentavel.java
+      ├─ mamiferos/
+      │  ├─ Leao.java
+      │  └─ Mamifero.java
+      └─ repteis/
+         ├─ Cobra.java
+         └─ Reptil.java
+```
 
----
+## ✅ O que foi aplicado
+- **Encapsulamento**: todos os atributos são **privados**; acesso via **getters/setters** (com validações simples).
+- **Herança**: `Mamifero`, `Ave`, `Reptil` herdam de `Animal`.
+- **Polimorfismo**: `emitirSom()` e `mover()` são sobrescritos nas subclasses.
+- **Interface**: `Alimentavel` (métodos `comer` e `beber`) implementada por `Leao`, `Aguia`, `Cobra`.
+- **Sobrecarga**: método `alimentar(...)` **sobrecarregado** (quantidade, tipo+quantidade, e objeto `Alimento`).
 
-## ⚙️ Como Executar
+## 🧪 O que o `main` demonstra
+- Criação de uma coleção `ArrayList<Animal>` com diferentes animais.
+- Laço polimórfico chamando `emitirSom()` e `mover()`.
+- Uso de `instanceof` para acionar comportamentos de `Alimentavel`.
+- Exemplos de **sobrecarga** com `Leao#alimentar(...)`.
 
-### 🪟 No Windows
-```bash
-cd zoologico-java
-mkdir out
-javac -d out src\zoo\interfaces\*.java src\zoo\*.java
-cd out
-java zoo.Zoologico
-
-
-🧪 Saída Esperada
-=== Demonstração de Polimorfismo ===
-Simba (espécie=Panthera leo, idade=5)
-Simba ruge alto!
-Simba corre pela savana.
-Simba come 0.50 kg de alimento padrão.
-Simba bebe 0.30 litros de água.
-...
-=== Sobrecarga de métodos (Leao#alimentar) ===
-Simba come 3.00 kg de carne.
-Simba come 2.50 kg de gazela.
-Simba come 1.20 kg de bife.
-
-Execução concluída com sucesso.
-
-
-🧰 Tecnologias Utilizadas
-
-☕ Java SE 11+
-
-💻 VS Code com Extension Pack for Java
-
-🧩 Paradigma Orientado a Objetos
-
-
-
-
-👨‍💻 Autor
-
-Mateus de Lima Lins Prestes
-📍 Brasília - DF
-📧 mateus.prestes.contato@gmail.com
-🔗 LinkedIn
-🐙 GitHub
+Bom estudo! ✨
