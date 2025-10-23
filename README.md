@@ -90,6 +90,6 @@ Execução concluída com sucesso.
 
 **Mateus de Lima Lins Prestes**  
 📍 Brasília - DF  
-📧 (mateus.prestes.contato@gmail.com)  
-🔗 (https://www.linkedin.com/in/mateus-de-lima-lins-304a812b7)  
-🐙 (https://github.com/TeuzLins)
+📧 [mateus.prestes.contato@gmail.com](mailto:mateus.prestes.contato@gmail.com)
+🔗 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mateus-de-lima-lins-304a812b7)
+🐙 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TeuzLins)
