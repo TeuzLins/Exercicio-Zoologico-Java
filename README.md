@@ -28,23 +28,24 @@ O tema escolhido foi um **Sistema de Gerenciamento de Animais de um Zoológico**
 
 ---
 
-## 🧩 Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
+```bash
 zoologico-java/
 ├─ README.md
 ├─ src/
-│ └─ zoo/
-│ ├─ interfaces/
-│ │ └─ Alimentavel.java
-│ ├─ Alimento.java
-│ ├─ Animal.java
-│ ├─ Mamifero.java
-│ ├─ Ave.java
-│ ├─ Reptil.java
-│ ├─ Leao.java
-│ ├─ Aguia.java
-│ ├─ Cobra.java
-│ └─ Zoologico.java
+│  └─ zoo/
+│     ├─ interfaces/
+│     │  └─ Alimentavel.java
+│     ├─ Alimento.java
+│     ├─ Animal.java
+│     ├─ Mamifero.java
+│     ├─ Ave.java
+│     ├─ Reptil.java
+│     ├─ Leao.java
+│     ├─ Aguia.java
+│     ├─ Cobra.java
+│     └─ Zoologico.java
 └─ out/
 
 ---
@@ -91,6 +92,6 @@ Execução concluída com sucesso.
 
 **Mateus de Lima Lins Prestes**  
 📍 Brasília - DF  
-📧 [mateus.prestes.contato@gmail.com](mailto:mateus.prestes.contato@gmail.com)  
-🔗 [LinkedIn](https://www.linkedin.com/in/mateus-de-lima-lins-304a812b7)  
-🐙 [GitHub](https://github.com/TeuzLins)
+📧 (mateus.prestes.contato@gmail.com)  
+🔗 (https://www.linkedin.com/in/mateus-de-lima-lins-304a812b7)  
+🐙 (https://github.com/TeuzLins)
