@@ -1,9 +1,9 @@
-# 🧩 Sistema de Gerenciamento de Animais do Zoológico (Java OOP)
+# Sistema de Gerenciamento de Animais do Zoológico (Java OOP)
 
 Este projeto demonstra **encapsulamento**, **herança**, **polimorfismo**, **interfaces** e **sobrecarga** em Java,
 seguindo os requisitos do exercício.
 
-## ⚙️ Como compilar e executar (sem IDE)
+## Como compilar e executar (sem IDE)
 
 Requisitos: JDK 11+ instalado e `javac` no PATH.
 
@@ -18,7 +18,7 @@ javac -d out/zoo src/zoo/aves/*.java src/zoo/mamiferos/*.java src/zoo/repteis/*.
 java -cp out/zoo zoo.Zoologico
 ```
 
-## 📂 Estrutura
+##  Estrutura
 ```
 root/
 ├─ README.md
@@ -48,17 +48,15 @@ root/
          └─ Reptil.java
 ```
 
-## ✅ O que foi aplicado
+##  O que foi aplicado
 - **Encapsulamento**: todos os atributos são **privados**; acesso via **getters/setters** (com validações simples).
 - **Herança**: `Mamifero`, `Ave`, `Reptil` herdam de `Animal`.
 - **Polimorfismo**: `emitirSom()` e `mover()` são sobrescritos nas subclasses.
 - **Interface**: `Alimentavel` (métodos `comer` e `beber`) implementada por `Leao`, `Aguia`, `Cobra`.
 - **Sobrecarga**: método `alimentar(...)` **sobrecarregado** (quantidade, tipo+quantidade, e objeto `Alimento`).
 
-## 🧪 O que o `main` demonstra
+##  O que o `main` demonstra
 - Criação de uma coleção `ArrayList<Animal>` com diferentes animais.
 - Laço polimórfico chamando `emitirSom()` e `mover()`.
 - Uso de `instanceof` para acionar comportamentos de `Alimentavel`.
 - Exemplos de **sobrecarga** com `Leao#alimentar(...)`.
-
-Bom estudo! ✨
